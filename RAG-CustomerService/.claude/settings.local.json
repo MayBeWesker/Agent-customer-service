@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 list:*)",
+      "Bash(pip3 install:*)",
+      "Bash(streamlit run:*)",
+      "Bash(conda env:*)",
+      "Bash(conda run:*)",
+      "Bash(chmod 644 \"/Volumes/Program/projects/RAG Agent project/chroma_db/chroma.sqlite3\")",
+      "Bash(ls -la \"/Volumes/Program/projects/RAG Agent project/chroma_db/\"*.shm \"/Volumes/Program/projects/RAG Agent project/chroma_db/\"*.wal)",
+      "Bash(mount)",
+      "Bash(pkill -f \"streamlit.*app_file_uploader\")"
+    ]
+  }
+}
