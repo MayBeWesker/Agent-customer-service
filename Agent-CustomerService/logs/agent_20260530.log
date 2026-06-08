@@ -1,0 +1,116 @@
+2026-05-30 09:39:13,351 - agent - ERROR - file_handler.py:34 [listdir_with_allowed_type] data is not a dir
+2026-05-30 09:45:12,571 - agent - INFO - vector_store.py:97 [Loading knowledge base] /Volumes/Program/projects/RAG-Agent-projects/Agent/data/扫地机器人100问知识库.txt loading sucessfully
+2026-05-30 09:45:15,744 - agent - INFO - vector_store.py:97 [Loading knowledge base] /Volumes/Program/projects/RAG-Agent-projects/Agent/data/扫地机器人100问知识库.pdf loading sucessfully
+2026-05-30 09:47:24,709 - agent - INFO - vector_store.py:80 [Loading knowledge base] /Volumes/Program/projects/RAG-Agent-projects/Agent/data/扫地机器人100问知识库.txt is now in the knowledge base
+2026-05-30 09:47:24,710 - agent - INFO - vector_store.py:80 [Loading knowledge base] /Volumes/Program/projects/RAG-Agent-projects/Agent/data/扫地机器人100问知识库.pdf is now in the knowledge base
+2026-05-30 11:10:53,270 - agent - WARNING - agent_tools.py:96 [fetch_external_data] can not fetch the using history for user1021 in 2025-01
+2026-05-30 16:01:06,523 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:01:20,757 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:01:20,757 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 扫地机器人在我所在所在地方的气温下如何保养
+2026-05-30 16:02:05,016 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:02:05,016 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 扫地机器人在我所在所在地方的气温下如何保养
+2026-05-30 16:02:07,133 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_user_loacation
+2026-05-30 16:02:07,133 - agent - INFO - middleware.py:26 [tool monitor] parameter: {}
+2026-05-30 16:02:07,134 - agent - INFO - middleware.py:30 [tool monitor] tool get_user_loacation calling successful 
+2026-05-30 16:02:07,134 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 3 messages
+2026-05-30 16:02:07,134 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | Hefei
+2026-05-30 16:02:09,356 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_weather
+2026-05-30 16:02:09,356 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'city': 'Hefei'}
+2026-05-30 16:02:09,357 - agent - INFO - middleware.py:30 [tool monitor] tool get_weather calling successful 
+2026-05-30 16:02:09,358 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 5 messages
+2026-05-30 16:02:09,358 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | city: Hefei, the weather is sunny, and the tempreture is 26
+2026-05-30 16:02:12,157 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:02:12,158 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '扫地机器人在26℃晴天环境下的保养方法'}
+2026-05-30 16:02:17,173 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:02:17,175 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 7 messages
+2026-05-30 16:02:17,175 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 在26℃晴天环境下，扫地机器人保养需注意：定期清理尘盒垃圾以防异味；每周检查并清理主刷，防止毛发缠绕；及时清洗或更换拖布，避免发硬、发臭；清洁滤网并确保其干燥；定期擦拭激光雷达、悬崖传感器、回充传感器和碰撞传感器，防止灰尘遮挡影响性能。
+2026-05-30 16:15:39,664 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:15:39,665 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 帮我生成 user_id 为1001 的历史使用报告
+2026-05-30 16:15:41,790 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_current_month
+2026-05-30 16:15:41,791 - agent - INFO - middleware.py:26 [tool monitor] parameter: {}
+2026-05-30 16:15:41,792 - agent - INFO - middleware.py:30 [tool monitor] tool get_current_month calling successful 
+2026-05-30 16:15:41,793 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 3 messages
+2026-05-30 16:15:41,793 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 2025-01
+2026-05-30 16:15:44,521 - agent - INFO - middleware.py:25 [tool monitor] tool using :fill_context_for_report
+2026-05-30 16:15:44,521 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'user_id': '1001', 'month': '2025-01'}
+2026-05-30 16:15:44,522 - agent - INFO - middleware.py:30 [tool monitor] tool fill_context_for_report calling successful 
+2026-05-30 16:15:44,522 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 5 messages
+2026-05-30 16:15:44,523 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | [fill_context_for_report] is used
+2026-05-30 16:15:46,586 - agent - INFO - middleware.py:25 [tool monitor] tool using :fetch_external_data
+2026-05-30 16:15:46,587 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'user_id': '1001', 'month': '2025-01'}
+2026-05-30 16:15:46,590 - agent - INFO - middleware.py:30 [tool monitor] tool fetch_external_data calling successful 
+2026-05-30 16:15:46,591 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 7 messages
+2026-05-30 16:15:46,591 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | {"特征": "65㎡公寓 | 单身 | 木地板", "效率": "覆盖率：84%\n日均清扫：45㎡\n漏扫区域：沙发底部（高度不足）\n春节前后杂物增加，建议开启重点区域清扫", "耗材": "主刷寿命：剩余60天\nHEPA滤网：剩余45天\n边刷磨损：轻度", "对比": "较上月覆盖率提升1%；建议保持每周2次深度清洁；沙发底部建议手动辅助清理"}
+2026-05-30 16:15:48,781 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:15:48,781 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '扫地机器人耗材更换周期与保养建议'}
+2026-05-30 16:15:52,980 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:15:52,982 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 9 messages
+2026-05-30 16:15:52,982 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 滤网通常数月更换一次，若出现吸力下降、灰尘外溢或变形应及时更换；边刷在变形、掉毛或清扫效果下降时需更换，宠物和长发家庭更换频率更高；主刷建议每周检查清理一次，长发和宠物家庭需更频繁；拖布应定期深度清洁，变硬、发臭、磨损或清洁效果下降时更换。此外，需定期清洁激光雷达、悬崖传感器、回充传感器和碰撞传感器，避免灰尘遮挡影响功能。
+2026-05-30 16:47:44,146 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:47:44,146 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 请介绍一下你自己
+2026-05-30 16:48:35,727 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:48:35,729 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 在我当前所在位置的天气的情况下面，请问扫地机器人应该如何保养
+2026-05-30 16:48:37,641 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_user_loacation
+2026-05-30 16:48:37,641 - agent - INFO - middleware.py:26 [tool monitor] parameter: {}
+2026-05-30 16:48:37,643 - agent - INFO - middleware.py:30 [tool monitor] tool get_user_loacation calling successful 
+2026-05-30 16:48:37,644 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 3 messages
+2026-05-30 16:48:37,644 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | Hangzhou
+2026-05-30 16:48:39,543 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_weather
+2026-05-30 16:48:39,544 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'city': 'Hangzhou'}
+2026-05-30 16:48:39,545 - agent - INFO - middleware.py:30 [tool monitor] tool get_weather calling successful 
+2026-05-30 16:48:39,546 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 5 messages
+2026-05-30 16:48:39,546 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | city: Hangzhou, the weather is sunny, and the tempreture is 26
+2026-05-30 16:48:41,886 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:48:41,886 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '晴天26度天气下扫地机器人保养方法'}
+2026-05-30 16:48:44,870 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:48:44,873 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 7 messages
+2026-05-30 16:48:44,874 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 在晴天26度天气下，扫地机器人保养需注意：每周检查并清理主刷，长发或宠物家庭应更频繁；拖布应定期拆下深度清洁，若变硬、发臭、磨损或清洁效果下降则需更换；及时清空尘盒、保持滤网和拖布干燥、清洗污水箱及基站，避免异味产生。
+2026-05-30 16:50:39,407 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:50:39,409 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 在我当前所在城市的情况下，扫地机器人应该如何保养
+2026-05-30 16:50:41,476 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_user_loacation
+2026-05-30 16:50:41,477 - agent - INFO - middleware.py:26 [tool monitor] parameter: {}
+2026-05-30 16:50:41,478 - agent - INFO - middleware.py:30 [tool monitor] tool get_user_loacation calling successful 
+2026-05-30 16:50:41,479 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 3 messages
+2026-05-30 16:50:41,479 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | Hefei
+2026-05-30 16:50:45,447 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_weather
+2026-05-30 16:50:45,447 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'city': 'Hefei'}
+2026-05-30 16:50:45,448 - agent - INFO - middleware.py:30 [tool monitor] tool get_weather calling successful 
+2026-05-30 16:50:45,449 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 5 messages
+2026-05-30 16:50:45,449 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | city: Hefei, the weather is sunny, and the tempreture is 26
+2026-05-30 16:50:47,706 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:50:47,706 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '扫地机器人在晴天26度环境下的保养方法'}
+2026-05-30 16:50:51,401 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:50:51,403 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 7 messages
+2026-05-30 16:50:51,404 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 在晴天26度环境下，扫地机器人保养需注意：定期清理尘盒垃圾以防异味；每周检查并清理主刷，防止毛发缠绕；及时清洗或更换拖布，避免发硬、发臭；清洁滤网、污水箱及基站，保持干燥；定期擦拭激光雷达、悬崖传感器、回充传感器和碰撞传感器，确保正常工作。
+2026-05-30 16:53:46,921 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 1 messages
+2026-05-30 16:53:46,922 - agent - DEBUG - middleware.py:48 [log_before_model] HumanMessage | 帮我生成用户 1002 的用户历史使用报告
+2026-05-30 16:53:49,227 - agent - INFO - middleware.py:25 [tool monitor] tool using :get_current_month
+2026-05-30 16:53:49,228 - agent - INFO - middleware.py:26 [tool monitor] parameter: {}
+2026-05-30 16:53:49,229 - agent - INFO - middleware.py:30 [tool monitor] tool get_current_month calling successful 
+2026-05-30 16:53:49,231 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 3 messages
+2026-05-30 16:53:49,231 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 2025-02
+2026-05-30 16:53:52,332 - agent - INFO - middleware.py:25 [tool monitor] tool using :fill_context_for_report
+2026-05-30 16:53:52,332 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'user_id': '1002', 'month': '2025-02'}
+2026-05-30 16:53:52,333 - agent - INFO - middleware.py:30 [tool monitor] tool fill_context_for_report calling successful 
+2026-05-30 16:53:52,337 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 5 messages
+2026-05-30 16:53:52,338 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | [fill_context_for_report] is used
+2026-05-30 16:53:55,029 - agent - INFO - middleware.py:25 [tool monitor] tool using :fetch_external_data
+2026-05-30 16:53:55,030 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'user_id': '1002', 'month': '2025-02'}
+2026-05-30 16:53:55,035 - agent - INFO - middleware.py:30 [tool monitor] tool fetch_external_data calling successful 
+2026-05-30 16:53:55,050 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 7 messages
+2026-05-30 16:53:55,050 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | {"特征": "70㎡公寓 | 情侣 | 瓷砖", "效率": "覆盖率：88%\n日均清扫：52㎡\n避障失败：2次/月（电线缠绕）\n春节前后杂物增加，建议开启重点区域清扫", "耗材": "边刷磨损：中度\n尘盒清理：每2天\n拖布功能使用：高频", "对比": "较上月覆盖率提升1%；拖地使用率较高；建议清洁前整理充电线和数据线，降低缠绕风险"}
+2026-05-30 16:53:58,405 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:53:58,405 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '扫地机器人边刷磨损维护和拖布清洁建议'}
+2026-05-30 16:54:01,327 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:54:01,340 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 9 messages
+2026-05-30 16:54:01,341 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 边刷在变形、掉毛或清扫边角效果下降时需更换，宠物和长发家庭更换频率更高。拖布应定期拆下深度清洁，若变硬、发臭、磨损或清洁效果下降时应更换；带基站的机型虽可自动清洗，仍需人工维护。
+2026-05-30 16:54:03,404 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:54:03,405 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '扫地机器人电线缠绕问题解决方案'}
+2026-05-30 16:54:05,907 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:54:05,920 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 11 messages
+2026-05-30 16:54:05,921 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 扫地机器人可能缠绕电线，普通机型易发生拖拽或缠绕，避障性能较好的机型可降低风险，但仍建议提前收纳好电线；若主刷被电线缠绕，会导致主刷异常，需关闭电源后取出清理。
+2026-05-30 16:54:07,976 - agent - INFO - middleware.py:25 [tool monitor] tool using :rag_summarize
+2026-05-30 16:54:07,977 - agent - INFO - middleware.py:26 [tool monitor] parameter: {'query': '扫地机器人重点区域清扫功能使用建议'}
+2026-05-30 16:54:11,741 - agent - INFO - middleware.py:30 [tool monitor] tool rag_summarize calling successful 
+2026-05-30 16:54:11,760 - agent - INFO - middleware.py:47 [log_before_model] Going to use the model, with 13 messages
+2026-05-30 16:54:11,760 - agent - DEBUG - middleware.py:48 [log_before_model] ToolMessage | 扫地机器人重点区域清扫功能可通过分区清扫实现，仅清洁指定区域（如餐桌周围或厨房），提升效率并减少干扰；对于桌椅密集区域，虽可清扫但效率较低，建议移开障碍物以提升效果；部分机型还支持按需设置清扫顺序和不同区域的水量，以适配地面类型和清洁需求。
